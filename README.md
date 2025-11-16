@@ -16,6 +16,30 @@ These are small problems where AI solutions can shine and provide immediate valu
 
 Today is a chance to see how this works in practice and start spotting similar opportunities in our own teams and projects.
 
+## Tooling
+
+#### Gemini API
+A large language model that handles natural-language tasks. In our case this is answering HR questions and generating recommendations.
+
+#### ChromaDB
+A lightweight vector database that stores text as embeddings. ChromaDB finds the most relevant chunks of text based on our questions which we can then include in our prompts. This allows us to avoid uploading documents to Gemini directly.
+
+#### Embeddings
+Instead of storing raw text, we convert each chunk into a vector using Google’s embedding model. Distance between vectors tells us how semantically similar two pieces of text are. This is what allows Gemini to answer from the correct policy section.
+
+#### Python
+The suggested language to link the component parts together is python. It's popular, simple, and robust.
+
+#### Retrieval-Augmented Generation (RAG)
+The 'proper' name for the simple pattern we’re using:
+
+* Retrieve relevant text from ChromaDB.
+
+* Feed it into the Gemini model to answer the question.
+
+## API keys
+
+These will be provided on the day along with a demo of how to obtain them.
 
 ## Getting started
 
