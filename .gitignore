@@ -1,0 +1,27 @@
+# Python venv
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local environment variables
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# ChromaDB local storage
+chromadb/
+*.sqlite3
+
+# Editor junk
+.vscode/
+.idea/
+
+# Logs
+*.log
